@@ -1,7 +1,9 @@
 Interzone Core staging tree 1.5.2.7
 ===============================
 
-https://interzone.space
+`master:` [![Build Status](https://travis-ci.org/interzoneproject/ITZ.svg?branch=master)](https://travis-ci.org/interzoneproject/ITZ) 
+
+https://www.interzone.pw
 
 Copyright (c) 2009-2015 Bitcoin Core Developers
 
@@ -21,7 +23,7 @@ are carried out collectively by the network. Interzone Core is the name of open
 source software which enables the use of this token.
 
 For more information, as well as an immediately useable, binary version of
-the Interzone client, see https://interzone.space
+the Interzone client, see https://interzone.pw
 
 Interzone is a community based project and there are no "Core Developers" in the traditional
 sense. Anyone is invited to submit code improvements or features. Please see CONTRIBUTING.md
@@ -69,19 +71,3 @@ on all categories (and give you a very large debug.log file).
 The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt
 to see it.
 
-**testnet and regtest modes**
-
-Run with the -testnet option to run with "testinterzone" on the test network, if you
-are testing multi-machine code that needs to operate across the internet. You can also
-find a fully working testnet-only client at http://test.interzone.space
-
-If you are testing something that can run on one machine, run with the -regtest option.
-In regression test mode blocks can be created on-demand; see qa/rpc-tests/ for tests
-that run in -regtest mode.
-
-**DEBUG_LOCKORDER**
-
-Interzone Core is a multithreaded application, and deadlocks or other multithreading bugs
-can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
-CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
-are held, and adds warning to the debug.log file if inconsistencies are detected.
